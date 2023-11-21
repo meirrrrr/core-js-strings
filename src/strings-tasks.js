@@ -310,22 +310,8 @@ function containsSubstring(str, substring) {
  *   countVowels('aEiOu') => 5
  *   countVowels('XYZ') => 1
  */
-function countVowels(str) {
-  const vowels = ['a', 'e', 'i', 'o', 'u', 'y', 'A', 'E', 'I', 'O', 'U', 'Y'];
-
-  // Initialize count
-  let count = 0;
-
-  // Iterate through each character in the string
-  for (let i = 0; i < str.length; i++) {
-    // Check if the character is a vowel
-    if (vowels.includes(str[i])) {
-      count++;
-    }
-  }
-
-  // Return the final count
-  return count;
+function countVowels(/* str */) {
+  throw new Error('Not implemented');
 }
 
 /**
@@ -474,7 +460,6 @@ function extractEmails(/* str */) {
 function encodeToRot13(/* str */) {
   throw new Error('Not implemented');
 }
-
 /**
  * Returns playid card id.
  *
