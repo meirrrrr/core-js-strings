@@ -202,7 +202,7 @@ function sumOfCodes(str) {
     return 0;
   }
   let sum = 0;
-  str.split('').forEach(function (value, index) {
+  str.split('').forEach((value, index) => {
     sum += str.charCodeAt(index);
   });
   return sum;
@@ -376,7 +376,7 @@ function findLongestWord(sentence) {
   const spltiArr = sentence.split(' ');
   let max = 0;
   let index = 0;
-  spltiArr.forEach(function (value, i) {
+  spltiArr.forEach((value, i) => {
     if (value.length > max) {
       max = value.length;
       index = i;
